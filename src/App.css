@@ -12,6 +12,9 @@
   height: 150px;
   padding: 20px;
   color: white;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 .App-title {
@@ -25,4 +28,28 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.mz-section {
+  min-height: 100vh;
+  padding: 3em 0;
+}
+
+.mz-section.black {
+  background-color: #333;
+}
+
+.mz-section.grey {
+  background-color: #ddd;
+}
+
+.mz-section.mz-image {
+  background-image: url("Mozambique-9.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.mz-text-section {
+  color: #fff;
 }
