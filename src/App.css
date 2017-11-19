@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .App-logo {
@@ -31,15 +32,15 @@
 }
 
 .mz-section {
-  min-height: 100vh;
   padding: 3em 0;
+  min-height: 40em;
 }
 
 .mz-section.black {
   background-color: #333;
 }
 
-.mz-section.grey {
+.mz-grey {
   background-color: #ddd;
 }
 
@@ -50,6 +51,30 @@
   width: 100%;
 }
 
-.mz-text-section {
-  color: #fff;
+.mz-section-header {
+  margin: 1em 0;
+}
+
+.mz-section-text {
+  color: #333;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+h3.mz-socrata-chart-title {
+  font-size: 1.4em;
+  margin: 0 0 0.5em 0;
+}
+
+.mz-socrata-chart-container {
+
+}
+
+.modal-container {
+  position: relative;
+}
+
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
 }
