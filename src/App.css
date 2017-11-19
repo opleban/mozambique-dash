@@ -78,3 +78,24 @@ h3.mz-socrata-chart-title {
 .modal-container .modal, .modal-container .modal-backdrop {
   position: absolute;
 }
+
+.mz-socrata-chart-container .socrata-embed-container .input-group  {
+  display: table !important;
+}
+
+.mz-socrata-chart-container .socrata-embed-container .btn-default {
+  background-color: #f1f1f1 !important;
+  color: #6a6a6a !important;
+}
+
+.mz-socrata-chart-container .socrata-embed-container .btn-default.active {
+  border-color: #ccc !important;
+  background-color: #f1f1f1 !important;
+  color: #6a6a6a !important;
+}
+
+.mz-socrata-chart-container .socrata-embed-container .btn-default:focus, .mz-socrata-chart-container .socrata-embed-container .btn-simple:hover {
+  color: #6a6a6a !important;
+  background-color: #f1f1f1 !important;
+  color: #6a6a6a !important;
+}

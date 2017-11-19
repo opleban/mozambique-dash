@@ -47,56 +47,50 @@ class App extends Component {
             </Col>
         </Grid>
         <Grid className="mz-section mz-grey">
-          <h2 id="gender" className="mz-section-header">
+          <h2 id="household" className="mz-section-header">
             Poverty & Household Size
           </h2>
-          <Col lg={4} md={12} sm={12} xs={12}>
+
+          <Col lg={6} md={12} sm={12} xs={12}>
+            <h3 className="mz-socrata-chart-title">Household Sizes: Poor & Non-Poor</h3>
+            <div className="mz-socrata-chart-container">
+              <a className="socrata-visualization-embed"
+                 data-embed-version="1"
+                 data-height="450"
+                 data-width="100%"
+                 data-vif="{&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;showDimensionLabels&quot;:true,&quot;xAxisScalingMode&quot;:&quot;pan&quot;,&quot;showLegend&quot;:true,&quot;axisLabels&quot;:{&quot;left&quot;:&quot;Number of Households&quot;,&quot;bottom&quot;:&quot;Household Size&quot;}},&quot;series&quot;:[{&quot;unit&quot;:{&quot;other&quot;:&quot;households&quot;,&quot;one&quot;:&quot;household&quot;},&quot;color&quot;:{&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;palette&quot;:&quot;custom&quot;,&quot;customPalette&quot;:{&quot;is_below_poverty&quot;:{&quot;Poor&quot;:{&quot;color&quot;:&quot;#f98d27&quot;,&quot;index&quot;:1},&quot;Not Poor&quot;:{&quot;color&quot;:&quot;#71abd9&quot;,&quot;index&quot;:0}}},&quot;primary&quot;:&quot;#71abd9&quot;},&quot;type&quot;:&quot;columnChart&quot;,&quot;dataSource&quot;:{&quot;measure&quot;:{&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;orderBy&quot;:{&quot;parameter&quot;:&quot;dimension&quot;,&quot;sort&quot;:&quot;asc&quot;},&quot;filters&quot;:[{&quot;function&quot;:&quot;noop&quot;,&quot;columnName&quot;:&quot;location&quot;,&quot;isHidden&quot;:false,&quot;arguments&quot;:null}],&quot;type&quot;:&quot;socrata.soql&quot;,&quot;datasetUid&quot;:&quot;i8nq-dty2&quot;,&quot;dimension&quot;:{&quot;grouping&quot;:{&quot;columnName&quot;:&quot;is_below_poverty&quot;},&quot;columnName&quot;:&quot;hhsize&quot;,&quot;aggregationFunction&quot;:null}},&quot;label&quot;:null}],&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/fdxh-ig6u&quot;},&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;}"
+                 href="https://ori.demo.socrata.com/dataset/Mozambique-Households/i8nq-dty2?referrer=embed"
+                 rel="external"
+                 target="_blank">
+                View the data
+              </a>
+
+            </div>
+          </Col>
+          <Col lg={6} md={12} sm={12} xs={12}>
+            <h3 className="mz-socrata-chart-title">Number of Children by Household: Poor & Non-Poor</h3>
+            <div className="mz-socrata-chart-container">
+              <a class="socrata-visualization-embed"
+                 data-embed-version="1"
+                 data-height="450"
+                 data-width="100%"
+                 href="https://ori.demo.socrata.com/dataset/Mozambique-Households-Children-under-14-with-Lat-L/qsr5-qxtr?referrer=embed"
+                 rel="external"
+                 target="_blank"
+                 data-vif="{&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;showDimensionLabels&quot;:true,&quot;xAxisScalingMode&quot;:&quot;pan&quot;,&quot;showLegend&quot;:true,&quot;axisLabels&quot;:{&quot;left&quot;:&quot;Number of Households&quot;,&quot;bottom&quot;:&quot;Number of Children Under Age 14&quot;}},&quot;series&quot;:[{&quot;unit&quot;:{&quot;other&quot;:&quot;households&quot;,&quot;one&quot;:&quot;household&quot;},&quot;color&quot;:{&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;palette&quot;:&quot;custom&quot;,&quot;customPalette&quot;:{&quot;is_below_poverty&quot;:{&quot;Poor&quot;:{&quot;color&quot;:&quot;#f98d27&quot;,&quot;index&quot;:1},&quot;Not Poor&quot;:{&quot;color&quot;:&quot;#71abd9&quot;,&quot;index&quot;:0}}},&quot;primary&quot;:&quot;#71abd9&quot;},&quot;type&quot;:&quot;columnChart&quot;,&quot;dataSource&quot;:{&quot;measure&quot;:{&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;orderBy&quot;:{&quot;parameter&quot;:&quot;dimension&quot;,&quot;sort&quot;:&quot;asc&quot;},&quot;filters&quot;:[{&quot;function&quot;:&quot;noop&quot;,&quot;columnName&quot;:&quot;location&quot;,&quot;isHidden&quot;:false,&quot;arguments&quot;:null}],&quot;type&quot;:&quot;socrata.soql&quot;,&quot;datasetUid&quot;:&quot;qsr5-qxtr&quot;,&quot;dimension&quot;:{&quot;grouping&quot;:{&quot;columnName&quot;:&quot;is_below_poverty&quot;},&quot;columnName&quot;:&quot;number_of_children&quot;,&quot;aggregationFunction&quot;:null}},&quot;label&quot;:null}],&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/xvgu-f3dy&quot;},&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;}">
+                 View the data
+              </a>
+            </div>
+          </Col>
+           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="mz-section-text">
-              <p>The poor have larger households and households with more children under the age of 14 than the non-poor in Mozambique. More than 96% of poor people lived in households where no one had accessed the internet within the past year, compared to 70% of non-poor people. Poor households were 1.75 times less likely to own a mobile phone compared to non-poor households.</p>
-              <p>Those without access to technology are more likely to be poor than those who have internet or own a mobile phone. Those without access to the internet are more than 5 times as likely to be poor as those without internet: 58% of individuals without internet access are poor, while only 10% with internet access are poor. Households that did not own at least one mobile phone had a 69% chance of being poor, 25% higher than the overall population. This could be due to regional concentration of the poor in rural areas – a rural household is x-times less likely to have access to the internet than an urban household, and x-times less likely to own a mobile phone.</p>              </div>
-          </Col>
-          <Col lg={8} md={12} sm={12} xs={12}>
-            <Col lg={12} md={12} sm={12} xs={12}>
-              <h3 className="mz-socrata-chart-title">Poor Household Sizes</h3>
-              <a class="socrata-visualization-embed"
-                 data-embed-version="1"
-                 data-height="280"
-                 data-width="100%"
-                 data-vif="{&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;description&quot;:&quot;&quot;,&quot;configuration&quot;:{&quot;bucketType&quot;:&quot;linear&quot;,&quot;viewSourceDataLink&quot;:true,&quot;axisLabels&quot;:{&quot;bottom&quot;:&quot;Household Size&quot;,&quot;left&quot;:&quot;Number of Households&quot;},&quot;measureAxisMaxValue&quot;:240},&quot;series&quot;:[{&quot;color&quot;:{&quot;primary&quot;:&quot;#71abd9&quot;,&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;},&quot;dataSource&quot;:{&quot;datasetUid&quot;:&quot;i8nq-dty2&quot;,&quot;dimension&quot;:{&quot;columnName&quot;:&quot;hhsize&quot;,&quot;aggregationFunction&quot;:null},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;measure&quot;:{&quot;columnName&quot;:null,&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;type&quot;:&quot;socrata.soql&quot;,&quot;filters&quot;:[{&quot;joinOn&quot;:&quot;OR&quot;,&quot;function&quot;:&quot;binaryOperator&quot;,&quot;arguments&quot;:[{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;Poor&quot;}],&quot;columnName&quot;:&quot;is_below_poverty&quot;,&quot;isHidden&quot;:true}]},&quot;label&quot;:null,&quot;type&quot;:&quot;histogram&quot;,&quot;unit&quot;:{&quot;one&quot;:&quot;household&quot;,&quot;other&quot;:&quot;households&quot;}}],&quot;title&quot;:&quot;&quot;,&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/cfmv-qygm&quot;}}"
-                 href="https://ori.demo.socrata.com/dataset/Mozambique-Households/i8nq-dty2?referrer=embed"
-                 rel="external"
-                 target="_blank">
-                View the data
-              </a>
-            </Col>
-            <Col lg={12} md={12} sm={12} xs={12}>
-              <h3 className="mz-socrata-chart-title">Non-Poor Household Sizes</h3>
-              <a class="socrata-visualization-embed"
-                 data-embed-version="1"
-                 data-height="280"
-                 data-width="100%"
-                 data-vif="{&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;bucketType&quot;:&quot;linear&quot;,&quot;axisLabels&quot;:{&quot;left&quot;:&quot;Number of Households&quot;,&quot;bottom&quot;:&quot;Household Size&quot;}},&quot;series&quot;:[{&quot;unit&quot;:{&quot;other&quot;:&quot;households&quot;,&quot;one&quot;:&quot;household&quot;},&quot;color&quot;:{&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;primary&quot;:&quot;#71abd9&quot;},&quot;type&quot;:&quot;histogram&quot;,&quot;dataSource&quot;:{&quot;measure&quot;:{&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;filters&quot;:[{&quot;joinOn&quot;:&quot;OR&quot;,&quot;function&quot;:&quot;binaryOperator&quot;,&quot;arguments&quot;:[{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;Not Poor&quot;}],&quot;columnName&quot;:&quot;is_below_poverty&quot;,&quot;isHidden&quot;:true}],&quot;type&quot;:&quot;socrata.soql&quot;,&quot;datasetUid&quot;:&quot;i8nq-dty2&quot;,&quot;dimension&quot;:{&quot;columnName&quot;:&quot;hhsize&quot;,&quot;aggregationFunction&quot;:null}},&quot;label&quot;:null}],&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/54fd-75u3&quot;},&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;}"
-                 href="https://ori.demo.socrata.com/dataset/Mozambique-Households/i8nq-dty2?referrer=embed"
-                 rel="external"
-                 target="_blank">
-                View the data
-              </a>
-            </Col>
-          </Col>
-          <Col lg={12} md={12} sm={12} xs={12}>
-            <h3 className="mz-socrata-chart-title">Number of Children by Household</h3>
-            <a
-              class="socrata-visualization-embed"
-              data-embed-version="1"
-              data-height="500"
-              data-width="100%"
-              data-vif="{&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;showDimensionLabels&quot;:true,&quot;xAxisScalingMode&quot;:&quot;pan&quot;,&quot;axisLabels&quot;:{&quot;left&quot;:&quot;Number of Households&quot;,&quot;bottom&quot;:&quot;Number of Children Under Age 14&quot;},&quot;showLegend&quot;:true},&quot;series&quot;:[{&quot;unit&quot;:{&quot;other&quot;:&quot;households&quot;,&quot;one&quot;:&quot;household&quot;},&quot;color&quot;:{&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;palette&quot;:&quot;custom&quot;,&quot;customPalette&quot;:{&quot;is_below_poverty&quot;:{&quot;Poor&quot;:{&quot;color&quot;:&quot;#f98d27&quot;,&quot;index&quot;:1},&quot;Not Poor&quot;:{&quot;color&quot;:&quot;#6da7d2&quot;,&quot;index&quot;:0}}},&quot;primary&quot;:&quot;#71abd9&quot;},&quot;type&quot;:&quot;columnChart&quot;,&quot;dataSource&quot;:{&quot;measure&quot;:{&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;orderBy&quot;:{&quot;parameter&quot;:&quot;dimension&quot;,&quot;sort&quot;:&quot;asc&quot;},&quot;filters&quot;:[{&quot;function&quot;:&quot;noop&quot;,&quot;columnName&quot;:&quot;is_below_poverty&quot;,&quot;isHidden&quot;:true,&quot;arguments&quot;:null}],&quot;type&quot;:&quot;socrata.soql&quot;,&quot;datasetUid&quot;:&quot;b6i8-numx&quot;,&quot;dimension&quot;:{&quot;grouping&quot;:{&quot;columnName&quot;:&quot;is_below_poverty&quot;},&quot;columnName&quot;:&quot;number_of_children&quot;,&quot;aggregationFunction&quot;:null}},&quot;label&quot;:null}],&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/w9xu-nerb&quot;},&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;}"
-              href="https://ori.demo.socrata.com/dataset/Number-of-Children-Under-14-by-Household/b6i8-numx?referrer=embed"
-              rel="external" target="_blank">View the data</a>
+              <p>Poor households have larger households than non-poor households in Mozambique. The average poor household has 5.77 members, while the average non-poor household has 4.66 members.</p>
+              <p>Poor households also have more children under the age of 14 than non-poor houshoulds. The average poor household has 3.15 children under the age of 14, while the average non-poor household has 1.9. Households with at least three children under the age of 14 are almost twice as likely to be poor than households with less than three children under the age of 14: 59% for households with many children, 31% for households with fewer children.</p>
+            </div>
           </Col>
         </Grid>
         <Grid className="mz-section">
-          <h2 id="gender" className="mz-section-header">
+          <h2 id="education" className="mz-section-header">
             Poverty & Education
           </h2>
             <Col lg={6} md={12} sm={12} xs={12}>
@@ -133,13 +127,14 @@ class App extends Component {
             </Col>
         </Grid>
         <Grid className="mz-section mz-grey">
-          <h2 id="gender" className="mz-section-header">
+          <h2 id="technology" className="mz-section-header">
             Poverty & Technology
           </h2>
           <Col lg={6} md={8} sm={12} xs={12}>
             <div className="mz-section-text">
               <p>The poor have less access to technology than the non-poor in Mozambique. More than 96% of poor people lived in households where no one had accessed the internet within the past year, compared to 70% of non-poor people. Poor households were 1.75 times less likely to own a mobile phone compared to non-poor households.</p>
-              <p>Those without access to technology are more likely to be poor than those who have internet or own a mobile phone. Those without access to the internet are more than 5 times as likely to be poor as those without internet: 58% of individuals without internet access are poor, while only 10% with internet access are poor. Households that did not own at least one mobile phone had a 69% chance of being poor, 25% higher than the overall population. This could be due to regional concentration of the poor in rural areas – a rural household is x-times less likely to have access to the internet than an urban household, and x-times less likely to own a mobile phone.</p>              </div>
+              <p>Those without access to technology are more likely to be poor than those who have internet or own a mobile phone. Those without access to the internet are more than 5 times as likely to be poor as those without internet: 58% of individuals without internet access are poor, while only 10% with internet access are poor. Households that did not own at least one mobile phone had a 69% chance of being poor, 25% higher than the overall population. This could be due to regional concentration of the poor in rural areas – a person from a rural household is almost 15-times less likely to have household access to the internet than an urban household (29.72% urban residents belong to households who have accessed internet in the past year, compared to 2.9% rural residents), and 1.5-times less likely to own a mobile phone (53.5% rural residents have mobile phones compared to 82.3% urban residents).</p>
+            </div>
           </Col>
           <Col lg={6} md={8} sm={12} xs={12}>
             <h3 className="mz-socrata-chart-title">Proportion of Poor Household Heads by Gender</h3>
@@ -154,6 +149,29 @@ class App extends Component {
                 target="_blank">
                 View the data
               </a>
+            </div>
+          </Col>
+        </Grid>
+        <Grid className="mz-section">
+          <h2 id="transportation" className="mz-section-header">
+            Poverty & Transportation
+          </h2>
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <div className="mz-section-text">
+              <p>The poor have less access to transportation than the non-poor in Mozambique as defined as access to any sort of car, motorcycle, bicycle or being less than 60 minutes away from a bus stop. The poor make up over 73% of people without access to transportation. Moreover the chance that a poor person does not have access to transportation (37.8%) is almost three times that of a non-poor person (13.6%).</p>
+              <p>It takes over twice as much time for the average poor person (35 minutes) to reach a bus stop than the average non-poor person (80 minutes).</p>
+            </div>
+          </Col>
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <div className="mz-socrata-chart-container">
+              <a class="socrata-visualization-embed"
+                data-embed-version="1"
+                data-height="600"
+                data-width="100%"
+                data-vif="{&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;bucketType&quot;:&quot;linear&quot;},&quot;series&quot;:[{&quot;color&quot;:{&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;primary&quot;:&quot;#71abd9&quot;},&quot;type&quot;:&quot;histogram&quot;,&quot;dataSource&quot;:{&quot;measure&quot;:{&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;filters&quot;:[{&quot;joinOn&quot;:&quot;OR&quot;,&quot;function&quot;:&quot;binaryOperator&quot;,&quot;arguments&quot;:[{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;Poor&quot;}],&quot;columnName&quot;:&quot;below_pov_line&quot;,&quot;isHidden&quot;:false}],&quot;type&quot;:&quot;socrata.soql&quot;,&quot;datasetUid&quot;:&quot;9m9z-i2ys&quot;,&quot;dimension&quot;:{&quot;columnName&quot;:&quot;time_facitlity_c&quot;,&quot;aggregationFunction&quot;:null}},&quot;label&quot;:null}],&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/tb95-8une&quot;},&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;description&quot;:&quot;Use the dropdown to toggle between poor and non-poor to display a histogram showing the distribution of distances from a bus stop for survey respondents.&quot;,&quot;title&quot;:&quot;Distance from Bus Stop&quot;}"
+                href="https://ori.demo.socrata.com/dataset/Mozambique-Data/9m9z-i2ys?referrer=embed"
+                rel="external"
+                target="_blank">View the data</a>
             </div>
           </Col>
         </Grid>
