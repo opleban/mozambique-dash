@@ -21,6 +21,11 @@ class App extends Component {
         <div className="mz-section mz-image">
         </div>
         <Grid className="mz-section">
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <iframe width="100%" height="520" frameborder="0" src="https://fladatakind.carto.com/viz/b295f6d0-26ad-42ea-a36e-7348e1fa6f74/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </Col>
+        </Grid>
+        <Grid className="mz-section">
           <h2 id="gender" className="mz-section-header">
             Poverty & Gender
           </h2>
@@ -70,7 +75,7 @@ class App extends Component {
           <Col lg={6} md={12} sm={12} xs={12}>
             <h3 className="mz-socrata-chart-title">Number of Children by Household: Poor & Non-Poor</h3>
             <div className="mz-socrata-chart-container">
-              <a class="socrata-visualization-embed"
+              <a className="socrata-visualization-embed"
                  data-embed-version="1"
                  data-height="450"
                  data-width="100%"
@@ -116,7 +121,7 @@ class App extends Component {
             <Col lg={12} md={12} sm={12} xs={12}>
               <h3 className="mz-socrata-chart-title">Poor Household Heads by Education</h3>
               <div className="mz-socrata-chart-container">
-                <a class="socrata-visualization-embed"
+                <a className="socrata-visualization-embed"
                    data-embed-version="1"
                    data-height="600"
                    data-width="100%"
@@ -139,7 +144,7 @@ class App extends Component {
           <Col lg={6} md={8} sm={12} xs={12}>
             <h3 className="mz-socrata-chart-title">Proportion of Poor Household Heads by Gender</h3>
             <div className="mz-socrata-chart-container">
-              <a class="socrata-visualization-embed"
+              <a className="socrata-visualization-embed"
                 data-embed-version="1"
                 data-height="600"
                 data-width="100%"
@@ -153,6 +158,13 @@ class App extends Component {
           </Col>
         </Grid>
         <Grid className="mz-section">
+          <h2 id="location">Rural and Urban Poverty</h2>
+          <div className="mz-section-text">
+            <p>Rural areas experience a greater problem with poverty than urban areas, with two out of three poor households living in rural regions of Mozambique. In contrast, nearly the same rate (63%) of non-poor households live in urban regions. Thus, a poor household is 1.34 times more likely to live in a rural region than a not poor household.</p>
+            <p>Rural populations are more prone to poverty than non-rural populations. Households located in rural regions are 1.78 times more likely to be a poor household than those in urban regions. Rural households are less likely to access technology (see “Poverty and Technology”), and adults in rural areas see lower rates of literacy than in urban households (x% versus x%). Additionally, rural households have less sanitation than urban households. + Access to health.</p>
+          </div>
+        </Grid>
+        <Grid className="mz-section">
           <h2 id="transportation" className="mz-section-header">
             Poverty & Transportation
           </h2>
@@ -164,7 +176,7 @@ class App extends Component {
           </Col>
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="mz-socrata-chart-container">
-              <a class="socrata-visualization-embed"
+              <a className="socrata-visualization-embed"
                 data-embed-version="1"
                 data-height="450"
                 data-width="100%"
