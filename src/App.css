@@ -1,6 +1,13 @@
+body {
+  background-color: #DDD;
+}
+
 .App {
   text-align: center;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #333;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -10,16 +17,18 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 75px;
   padding: 20px;
   color: white;
   position: fixed;
   z-index: 1000;
   width: 100%;
+  max-width: 1300px;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin: 1em 0;
 }
 
 .App-intro {
@@ -36,16 +45,36 @@
   min-height: 40em;
 }
 
+.mz-top-header {
+  top: 20%;
+  color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.mz-top-header h1 {
+  text-transform: uppercase;
+  font-size: 11em;
+  text-align: left;
+  line-height: 0.6em;
+}
+
+.mz-top-header h2 {
+  text-align: left;
+
+}
+
 .mz-section.black {
   background-color: #333;
 }
 
-.mz-grey {
-  background-color: #ddd;
-}
-
 .mz-section.mz-image {
-  background-image: url("Mozambique-9.png");
+  background: linear-gradient(
+      rgba(255, 0, 0, 0.25),
+      rgba(255, 0, 0, 0.25)
+    ), url("city.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -53,22 +82,21 @@
 
 .mz-section-header {
   margin: 0 0 1em 0;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #f1f1f1;
 }
 
 .mz-section-text {
-  color: #333;
+  color: #f1f1f1;
   text-align: left;
   font-size: 1.2em;
   line-height: 1.2em;
+  color: #f1f1f1;
 }
 
 h3.mz-socrata-chart-title {
   font-size: 1.4em;
   margin: 0 0 0.5em 0;
-}
-
-.mz-socrata-chart-container {
-
 }
 
 .modal-container {
@@ -98,4 +126,33 @@ h3.mz-socrata-chart-title {
   color: #6a6a6a !important;
   background-color: #f1f1f1 !important;
   color: #6a6a6a !important;
+}
+
+.navbar-default.mz-navbar {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #FFF;
+}
+
+.navbar-default.mz-navbar li a {
+  color: #f1f1f1;
+  box-shadow: none;
+}
+
+.navbar-default.mz-navbar li a:hover, .navbar-default.mz-navbar li a:focus {
+  color: rgb(255, 0, 0);
+  text-shadow: none;
+}
+
+.navbar-default.mz-navbar a.navbar-brand {
+  font-size: 1.8em;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #f1f1f1;
+}
+
+.navbar-default.mz-navbar a.navbar-brand:hover,
+.navbar-default.mz-navbar a.navbar-brand:focus {
+  color: rgb(255, 0, 0);
 }

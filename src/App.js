@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import MZChart from './mz-chart.js';
 import { Col, Grid } from 'react-bootstrap';
+import MzNavBarHeader from './mz-header.js';
 
 class App extends Component {
   constructor(props) {
@@ -15,41 +16,47 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="http://afrobarometer.org/sites/default/files/country_images/country-mozambique.png" className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to the Mozambique Poverty Profile Dashboard</h1>
+          <MzNavBarHeader />
         </header>
         <div className="mz-section mz-image">
+          <div className="mz-top-header container">
+            <h1>
+              Mozambique
+            </h1>
+            <h2>
+              Country Poverty Profile
+            </h2>
+          </div>
         </div>
         <Grid className="mz-section">
           <Col lg={12} md={12} sm={12} xs={12}>
-            <iframe width="100%" height="520" frameborder="0" src="https://fladatakind.carto.com/viz/b295f6d0-26ad-42ea-a36e-7348e1fa6f74/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+            <iframe width="100%" height="520" frameborder="0" src="https://fladatakind.carto.com/viz/d2f6fea4-aa85-4e1a-9390-f2158487221c/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
           </Col>
         </Grid>
         <Grid className="mz-section">
           <h2 id="gender" className="mz-section-header">
             Poverty & Gender
           </h2>
-            <Col lg={6} md={8} sm={12} xs={12}>
-              <div className="mz-section-text">
-                <p>Gender plays a less important role in Mozambique’s poverty than might be expected. There is no significant difference in the gender of household heads between poor and not poor families, nor do the poor have a different proportion of either gender than in the population.</p>
-                <p>People in households run by women are no more prone to poverty than those in households run by men. Nor are women in general more prone to poverty than men. However, there is a difference in education across gender – see <a href="#education">Poverty and Education</a> </p>
-              </div>
-            </Col>
-            <Col lg={6} md={8} sm={12} xs={12}>
-              <h3 className="mz-socrata-chart-title">Proportion of Household Heads by Gender</h3>
-              <div className="mz-socrata-chart-container">
-                <a className="socrata-visualization-embed"
-                   data-embed-version="1"
-                   data-height="300"
-                   data-width="100%"
-                   data-vif="{&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;showDimensionLabels&quot;:true,&quot;showValueLabels&quot;:true,&quot;xAxisScalingMode&quot;:&quot;pan&quot;,&quot;axisLabels&quot;:{&quot;left&quot;:&quot;Gender&quot;,&quot;top&quot;:&quot;Proportion of household heads&quot;},&quot;dimensionLabelAreaSize&quot;:86,&quot;showLegend&quot;:true},&quot;series&quot;:[{&quot;color&quot;:{&quot;primary&quot;:&quot;#71abd9&quot;,&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;palette&quot;:&quot;custom&quot;,&quot;customPalette&quot;:{&quot;is_below_poverty&quot;:{&quot;Poor&quot;:{&quot;color&quot;:&quot;#f98d27&quot;,&quot;index&quot;:1},&quot;Not Poor&quot;:{&quot;color&quot;:&quot;#71abd9&quot;,&quot;index&quot;:0}}}},&quot;dataSource&quot;:{&quot;datasetUid&quot;:&quot;34xf-jgsk&quot;,&quot;dimension&quot;:{&quot;columnName&quot;:&quot;gender&quot;,&quot;aggregationFunction&quot;:null,&quot;grouping&quot;:{&quot;columnName&quot;:&quot;is_below_poverty&quot;}},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;measure&quot;:{&quot;columnName&quot;:null,&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;orderBy&quot;:{&quot;parameter&quot;:&quot;measure&quot;,&quot;sort&quot;:&quot;asc&quot;},&quot;type&quot;:&quot;socrata.soql&quot;,&quot;filters&quot;:[]},&quot;label&quot;:null,&quot;type&quot;:&quot;barChart&quot;,&quot;stacked&quot;:{&quot;oneHundredPercent&quot;:true},&quot;unit&quot;:{&quot;one&quot;:&quot;household head&quot;,&quot;other&quot;:&quot;household heads&quot;}}],&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/5bq6-rk2f&quot;}}"
-                   href="https://ori.demo.socrata.com/dataset/Mozambique-Head-of-Households/34xf-jgsk?referrer=embed"
-                   rel="external"
-                   target="_blank">
-                  View the data
-                </a>
-              </div>
-            </Col>
+          <Col lg={6} md={8} sm={12} xs={12}>
+            <div className="mz-section-text">
+              <p>Gender plays a less important role in Mozambique’s poverty than might be expected. There is no significant difference in the gender of household heads between poor and not poor families, nor do the poor have a different proportion of either gender than in the population.</p>
+              <p>People in households run by women are no more prone to poverty than those in households run by men. Nor are women in general more prone to poverty than men. However, there is a difference in education across gender – see <a href="#education">Poverty and Education</a> </p>
+            </div>
+          </Col>
+          <Col lg={6} md={8} sm={12} xs={12}>
+            <h3 className="mz-socrata-chart-title">Proportion of Household Heads by Gender</h3>
+            <div className="mz-socrata-chart-container">
+              <a
+                class="socrata-visualization-embed"
+                data-embed-version="1"
+                data-height="450"
+                data-width="100%"
+                data-vif="{&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;showDimensionLabels&quot;:true,&quot;xAxisScalingMode&quot;:&quot;pan&quot;,&quot;showLegend&quot;:true,&quot;axisLabels&quot;:{&quot;left&quot;:&quot;Heads of Household&quot;,&quot;bottom&quot;:&quot;Gender&quot;}},&quot;description&quot;:&quot;&quot;,&quot;series&quot;:[{&quot;color&quot;:{&quot;primary&quot;:&quot;#71abd9&quot;,&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;palette&quot;:&quot;custom&quot;,&quot;customPalette&quot;:{&quot;is_below_poverty&quot;:{&quot;Poor&quot;:{&quot;color&quot;:&quot;#f98d27&quot;,&quot;index&quot;:0},&quot;Not Poor&quot;:{&quot;color&quot;:&quot;#71abd9&quot;,&quot;index&quot;:1}}}},&quot;dataSource&quot;:{&quot;datasetUid&quot;:&quot;34xf-jgsk&quot;,&quot;dimension&quot;:{&quot;columnName&quot;:&quot;gender&quot;,&quot;aggregationFunction&quot;:null,&quot;grouping&quot;:{&quot;columnName&quot;:&quot;is_below_poverty&quot;}},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;measure&quot;:{&quot;columnName&quot;:null,&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;orderBy&quot;:{&quot;parameter&quot;:&quot;measure&quot;,&quot;sort&quot;:&quot;desc&quot;},&quot;type&quot;:&quot;socrata.soql&quot;,&quot;filters&quot;:[]},&quot;label&quot;:null,&quot;type&quot;:&quot;columnChart&quot;,&quot;unit&quot;:{&quot;one&quot;:&quot;household head&quot;,&quot;other&quot;:&quot;household heads&quot;}}],&quot;title&quot;:&quot;&quot;,&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;}}"
+                href="https://ori.demo.socrata.com/dataset/Mozambique-Head-of-Households/34xf-jgsk?referrer=embed"
+                rel="external"
+                target="_blank">View the data</a>
+            </div>
+          </Col>
         </Grid>
         <Grid className="mz-section mz-grey">
           <h2 id="household" className="mz-section-header">
@@ -89,6 +96,7 @@ class App extends Component {
           </Col>
            <Col lg={12} md={12} sm={12} xs={12}>
             <div className="mz-section-text">
+              <br/>
               <p>Poor households have larger households than non-poor households in Mozambique. The average poor household has 5.77 members, while the average non-poor household has 4.66 members.</p>
               <p>Poor households also have more children under the age of 14 than non-poor houshoulds. The average poor household has 3.15 children under the age of 14, while the average non-poor household has 1.9. Households with at least three children under the age of 14 are almost twice as likely to be poor than households with less than three children under the age of 14: 59% for households with many children, 31% for households with fewer children.</p>
             </div>
@@ -106,7 +114,7 @@ class App extends Component {
               </div>
             </Col>
             <Col lg={6} md={12} sm={12} xs={12}>
-              <h3 className="mz-socrata-chart-title">Household Head Poverty Level and Literacy Rate</h3>
+              <h3 className="mz-socrata-chart-title">Survey Question: Can you read or write?</h3>
               <a className="socrata-visualization-embed"
                  data-embed-version="1"
                  data-height="300"
@@ -158,11 +166,16 @@ class App extends Component {
           </Col>
         </Grid>
         <Grid className="mz-section">
-          <h2 id="location">Rural and Urban Poverty</h2>
-          <div className="mz-section-text">
-            <p>Rural areas experience a greater problem with poverty than urban areas, with two out of three poor households living in rural regions of Mozambique. In contrast, nearly the same rate (63%) of non-poor households live in urban regions. Thus, a poor household is 1.34 times more likely to live in a rural region than a not poor household.</p>
-            <p>Rural populations are more prone to poverty than non-rural populations. Households located in rural regions are 1.78 times more likely to be a poor household than those in urban regions. Rural households are less likely to access technology (see “Poverty and Technology”), and adults in rural areas see lower rates of literacy than in urban households (x% versus x%). Additionally, rural households have less sanitation than urban households. + Access to health.</p>
-          </div>
+          <h2 id="location" className="mz-section-header">Rural and Urban Poverty</h2>
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <div className="mz-section-text">
+              <p>Rural areas experience a greater problem with poverty than urban areas, with two out of three poor households living in rural regions of Mozambique. In contrast, nearly the same rate (63%) of non-poor households live in urban regions. Thus, a poor household is 1.34 times more likely to live in a rural region than a not poor household.</p>
+              <p>Rural populations are more prone to poverty than non-rural populations. Households located in rural regions are 1.78 times more likely to be a poor household than those in urban regions. Rural households are less likely to access technology (see “Poverty and Technology”), and adults in rural areas see lower rates of literacy than in urban households (x% versus x%). Additionally, rural households have less sanitation than urban households. + Access to health.</p>
+            </div>
+          </Col>
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <iframe width="100%" height="520" frameborder="0" src="https://fladatakind.carto.com/viz/7ef3c418-77e3-4a49-9d6e-155fcd52537e/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </Col>
         </Grid>
         <Grid className="mz-section">
           <h2 id="transportation" className="mz-section-header">
