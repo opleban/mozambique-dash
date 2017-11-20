@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MZChart from './mz-chart.js';
+import MZPovertyDescription from './mz-poverty-description.js';
 import { Col, Grid } from 'react-bootstrap';
 import MzNavBarHeader from './mz-header.js';
 
@@ -28,6 +29,12 @@ class App extends Component {
             </h2>
           </div>
         </div>
+        <Grid className="mz-section">
+          <h2 id="description" className="mz-section-header">
+            Who is the Poor in Mozambique?
+          </h2>
+          <MZPovertyDescription />
+        </Grid>
         <Grid className="mz-section">
           <h2 id="gender" className="mz-section-header">
             Poverty & Gender

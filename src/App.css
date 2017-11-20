@@ -156,3 +156,12 @@ h3.mz-socrata-chart-title {
 .navbar-default.mz-navbar a.navbar-brand:focus {
   color: rgb(255, 0, 0);
 }
+
+.mz-icon {
+  color: #f1f1f1;
+  font-size: 8em;
+}
+
+.mz-central-figure {
+  font-size: 1.4em;
+}
