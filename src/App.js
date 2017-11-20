@@ -30,9 +30,6 @@ class App extends Component {
           </div>
         </div>
         <Grid className="mz-section">
-          <h2 id="description" className="mz-section-header">
-            Who is the Poor in Mozambique?
-          </h2>
           <MZPovertyDescription />
         </Grid>
         <Grid className="mz-section">
@@ -60,7 +57,7 @@ class App extends Component {
             </div>
           </Col>
         </Grid>
-        <Grid className="mz-section mz-grey">
+        <Grid className="mz-section">
           <h2 id="household" className="mz-section-header">
             Poverty & Household Size
           </h2>
@@ -78,7 +75,6 @@ class App extends Component {
                  target="_blank">
                 View the data
               </a>
-
             </div>
           </Col>
           <Col lg={6} md={12} sm={12} xs={12}>
@@ -99,8 +95,8 @@ class App extends Component {
            <Col lg={12} md={12} sm={12} xs={12}>
             <div className="mz-section-text">
               <br/>
-              <p>Poor households have larger households than non-poor households in Mozambique. The average poor household has 5.77 members, while the average non-poor household has 4.66 members.</p>
-              <p>Poor households also have more children under the age of 14 than non-poor houshoulds. The average poor household has 3.15 children under the age of 14, while the average non-poor household has 1.9. Households with at least three children under the age of 14 are almost twice as likely to be poor than households with less than three children under the age of 14: 59% for households with many children, 31% for households with fewer children.</p>
+              <p>Poor households are larger than non-poor households in Mozambique. The average poor household has 5.77 members, while households above the poverty line have 4.66 members on average. Poor households also have more children under the age of 14 than non-poor households, with averages of 3.15 children and 1.9 children, respectively.</p>
+              <p>Large households are more prone to poverty. Households with three or more children under the age of 14 are almost twice as likely to be poor than households with fewer than three children under the age of 14.</p>
             </div>
           </Col>
         </Grid>
@@ -110,23 +106,26 @@ class App extends Component {
           </h2>
             <Col lg={6} md={12} sm={12} xs={12}>
               <div className="mz-section-text">
-                <p>Poor households are more likely to be headed by a person with less education than non-poor households. Almost 77% of poor households are headed by someone who did not complete primary education, versus 50% of non-poor households. [Note – this is best shown with graph because it’s a distribution]. Poor adults experience much lower rates of literacy, with less than half of poor adults being able to read and write. Those not in poverty enjoy a 74% literacy rate. The correlation between education and poverty extends to children: poor children are less likely to have attended school in the last year (44%) than non-poor children (55%).</p>
-                <p>Level of education correlates with incidence of poverty. Adults with no formal education are at a much higher risk of poverty (x%) than those who have completed primary education (x%) or secondary education (x%). Poverty rates are lowest among those with postsecondary training, either at university or vocational school (x%).</p>
-                <p>Education varies across gender and location. Women are X% more likely to lack formal schooling, and this is amplified for the poor: only x% of poor women have some education, compared to x% of non-poor women. Urban adults see a higher level of education, with only x% having no education, compared to x% of rural adults. This, too, is amplified for poor adults, with rural and poor adults seeing the highest level of no schooling at x%.</p>
+                <p>Lack of education and poverty are highly correlated in Mozambique. Poor households are more likely to have a household head with less education than non-poor households. Almost 77% of poor households are headed by someone who did not complete primary education, versus 50% of non-poor households. Poor adults experience much worse rates of literacy, with less than half of poor adults being able to read and write. Those adults not in poverty enjoy a 74% literacy rate. The correlation between education and poverty also extends to children: poor children are less likely to have attended school in the last year (44%) than non-poor children (55%).</p>
+                <p>People with university education are at the least risk of poverty (1.84%), followed by those with medium (4.6%) and basic (15%) technical education. Those with no education are at the highest risk of poverty (61.5%) followed by those who have only completed a lower primary (54.4%) and adult education (53.6%).</p>
+                <p>Education varies across gender. Over a third of adult women have never attended school; less than one sixth of adult men have never attended school. Women heads of households are 2.5 times more likely to lack formal schooling, and this is amplified for the poor: only 39.7% of poor, female household heads have some education, compared to 64.6% of non-poor female household heads.</p>
+                <p>Lack of formal education is concentrated in rural areas. The heads of urban households see a higher level of education, with only 19.2% having no education, compared to 35% of the heads of rural households. This, too, is amplified for the poor: rural and poor adults see the highest level of no schooling at 38.2%.</p>
               </div>
             </Col>
             <Col lg={6} md={12} sm={12} xs={12}>
               <h3 className="mz-socrata-chart-title">Survey Question: Can you read or write?</h3>
-              <a className="socrata-visualization-embed"
-                 data-embed-version="1"
-                 data-height="300"
-                 data-width="100%"
-                 data-vif="{&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;showDimensionLabels&quot;:true,&quot;xAxisScalingMode&quot;:&quot;pan&quot;,&quot;showValueLabels&quot;:true},&quot;series&quot;:[{&quot;unit&quot;:{&quot;other&quot;:&quot;respondents&quot;,&quot;one&quot;:&quot;respondent&quot;},&quot;stacked&quot;:{&quot;oneHundredPercent&quot;:true},&quot;color&quot;:{&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;palette&quot;:&quot;custom&quot;,&quot;customPalette&quot;:{&quot;read_write&quot;:{&quot;No&quot;:{&quot;color&quot;:&quot;#f98d27&quot;,&quot;index&quot;:1},&quot;Don't know&quot;:{&quot;color&quot;:&quot;#969696&quot;,&quot;index&quot;:2},&quot;Yes&quot;:{&quot;color&quot;:&quot;#71abd9&quot;,&quot;index&quot;:0}}},&quot;primary&quot;:&quot;#71abd9&quot;},&quot;type&quot;:&quot;barChart&quot;,&quot;dataSource&quot;:{&quot;measure&quot;:{&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;orderBy&quot;:{&quot;parameter&quot;:&quot;measure&quot;,&quot;sort&quot;:&quot;desc&quot;},&quot;filters&quot;:[{&quot;function&quot;:&quot;valueRange&quot;,&quot;arguments&quot;:{&quot;includeNullValues&quot;:true,&quot;start&quot;:15,&quot;end&quot;:99.02000000000001},&quot;columnName&quot;:&quot;age&quot;,&quot;isHidden&quot;:true},{&quot;joinOn&quot;:&quot;OR&quot;,&quot;function&quot;:&quot;binaryOperator&quot;,&quot;arguments&quot;:[{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;Yes&quot;},{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;No&quot;},{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;Don't know&quot;}],&quot;columnName&quot;:&quot;read_write&quot;,&quot;isHidden&quot;:true}],&quot;type&quot;:&quot;socrata.soql&quot;,&quot;datasetUid&quot;:&quot;9m9z-i2ys&quot;,&quot;dimension&quot;:{&quot;grouping&quot;:{&quot;columnName&quot;:&quot;read_write&quot;},&quot;columnName&quot;:&quot;below_pov_line&quot;,&quot;aggregationFunction&quot;:null}},&quot;label&quot;:null}],&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/rmhf-f9sn&quot;},&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;}"
-                 href="https://ori.demo.socrata.com/dataset/Mozambique-Data/9m9z-i2ys?referrer=embed"
-                 rel="external"
-                 target="_blank">
-                View the data
-              </a>
+              <div className="mz-socrata-chart-container">
+                <a className="socrata-visualization-embed"
+                   data-embed-version="1"
+                   data-height="450"
+                   data-width="100%"
+                   data-vif="{&quot;format&quot;:{&quot;type&quot;:&quot;visualization_interchange_format&quot;,&quot;version&quot;:2},&quot;configuration&quot;:{&quot;viewSourceDataLink&quot;:true,&quot;showDimensionLabels&quot;:true,&quot;xAxisScalingMode&quot;:&quot;pan&quot;,&quot;showLegend&quot;:true},&quot;description&quot;:&quot;&quot;,&quot;series&quot;:[{&quot;color&quot;:{&quot;primary&quot;:&quot;#71abd9&quot;,&quot;secondary&quot;:&quot;#71abd9&quot;,&quot;highlight&quot;:&quot;#cccccc&quot;,&quot;palette&quot;:&quot;custom&quot;,&quot;customPalette&quot;:{&quot;read_write&quot;:{&quot;No&quot;:{&quot;color&quot;:&quot;#f98d27&quot;,&quot;index&quot;:1},&quot;Don't know&quot;:{&quot;color&quot;:&quot;#969696&quot;,&quot;index&quot;:2},&quot;Yes&quot;:{&quot;color&quot;:&quot;#71abd9&quot;,&quot;index&quot;:0}}}},&quot;dataSource&quot;:{&quot;datasetUid&quot;:&quot;9m9z-i2ys&quot;,&quot;dimension&quot;:{&quot;columnName&quot;:&quot;below_pov_line&quot;,&quot;aggregationFunction&quot;:null,&quot;grouping&quot;:{&quot;columnName&quot;:&quot;read_write&quot;}},&quot;domain&quot;:&quot;ori.demo.socrata.com&quot;,&quot;measure&quot;:{&quot;columnName&quot;:null,&quot;aggregationFunction&quot;:&quot;count&quot;},&quot;orderBy&quot;:{&quot;parameter&quot;:&quot;measure&quot;,&quot;sort&quot;:&quot;desc&quot;},&quot;type&quot;:&quot;socrata.soql&quot;,&quot;filters&quot;:[{&quot;function&quot;:&quot;valueRange&quot;,&quot;arguments&quot;:{&quot;includeNullValues&quot;:true,&quot;start&quot;:15,&quot;end&quot;:99.02000000000001},&quot;columnName&quot;:&quot;age&quot;,&quot;isHidden&quot;:true},{&quot;joinOn&quot;:&quot;OR&quot;,&quot;function&quot;:&quot;binaryOperator&quot;,&quot;arguments&quot;:[{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;Yes&quot;},{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;No&quot;},{&quot;operator&quot;:&quot;=&quot;,&quot;operand&quot;:&quot;Don't know&quot;}],&quot;columnName&quot;:&quot;read_write&quot;,&quot;isHidden&quot;:true}]},&quot;label&quot;:null,&quot;type&quot;:&quot;columnChart&quot;,&quot;unit&quot;:{&quot;one&quot;:&quot;respondent&quot;,&quot;other&quot;:&quot;respondents&quot;}}],&quot;title&quot;:&quot;&quot;,&quot;origin&quot;:{&quot;type&quot;:&quot;visualization_canvas&quot;,&quot;url&quot;:&quot;https://ori.demo.socrata.com/d/rmhf-f9sn&quot;}}"
+                   href="https://ori.demo.socrata.com/dataset/Mozambique-Data/9m9z-i2ys?referrer=embed"
+                   rel="external"
+                   target="_blank">
+                  View the data
+                </a>
+              </div>
             </Col>
             <Col lg={12} md={12} sm={12} xs={12}>
               <h3 className="mz-socrata-chart-title">Poor Household Heads by Education</h3>
@@ -141,14 +140,15 @@ class App extends Component {
               </div>
             </Col>
         </Grid>
-        <Grid className="mz-section mz-grey">
+        <Grid className="mz-section">
           <h2 id="technology" className="mz-section-header">
             Poverty & Technology
           </h2>
           <Col lg={6} md={8} sm={12} xs={12}>
             <div className="mz-section-text">
-              <p>The poor have less access to technology than the non-poor in Mozambique. More than 96% of poor people lived in households where no one had accessed the internet within the past year, compared to 70% of non-poor people. Poor households were 1.75 times less likely to own a mobile phone compared to non-poor households.</p>
-              <p>Those without access to technology are more likely to be poor than those who have internet or own a mobile phone. Those without access to the internet are more than 5 times as likely to be poor as those without internet: 58% of individuals without internet access are poor, while only 10% with internet access are poor. Households that did not own at least one mobile phone had a 69% chance of being poor, 25% higher than the overall population. This could be due to regional concentration of the poor in rural areas – a person from a rural household is almost 15-times less likely to have household access to the internet than an urban household (29.72% urban residents belong to households who have accessed internet in the past year, compared to 2.9% rural residents), and 1.5-times less likely to own a mobile phone (53.5% rural residents have mobile phones compared to 82.3% urban residents).</p>
+              <p>The poor have less access to technology than the non-poor in Mozambique. More than 96% of poor people live in households where no one had accessed the internet within the past year, compared to 70% of non-poor people. Poor households are 1.75 times less likely to own a mobile phone compared to non-poor households.</p>
+              <p>Those without access to technology are more likely to be poor than those who do not. Households without access to internet are more than 5 times likelier to be poor than those with internet: 58% of individuals without internet access are poor, while only 10% with internet access are poor. Households that do not own at least one mobile phone had a 69% chance of being poor-- 25% higher than the overall population.</p>
+              <p>This could be due to regional concentration of the poor in more rural areas. A person from a rural household is almost 15-times less likely to have internet access compared to her urban peer (29.72% of urban residents belong to households that have accessed the internet in the past year, compared to 2.9% rural residents), and 1.5-times less likely to own a mobile phone (53.5% of rural residents have mobile phones, compared to 82.3% of urban residents).</p>
             </div>
           </Col>
           <Col lg={6} md={8} sm={12} xs={12}>
@@ -168,11 +168,11 @@ class App extends Component {
           </Col>
         </Grid>
         <Grid className="mz-section">
-          <h2 id="location" className="mz-section-header">Rural and Urban Poverty</h2>
+          <h2 id="location" className="mz-section-header">Rural & Urban Poverty</h2>
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="mz-section-text">
               <p>Rural areas experience a greater problem with poverty than urban areas, with two out of three poor households living in rural regions of Mozambique. In contrast, nearly the same rate (63%) of non-poor households live in urban regions. Thus, a poor household is 1.34 times more likely to live in a rural region than a not poor household.</p>
-              <p>Rural populations are more prone to poverty than non-rural populations. Households located in rural regions are 1.78 times more likely to be a poor household than those in urban regions. Rural households are less likely to access technology (see “Poverty and Technology”), and adults in rural areas see lower rates of literacy than in urban households (x% versus x%). Additionally, rural households have less sanitation than urban households. + Access to health.</p>
+              <p>Rural populations are more prone to poverty than non-rural populations. Households located in rural regions are 1.78 times likelier to be poor than those in urban regions. Rural households are less likely to access technology (see <a href="#technology">"Poverty and Technology”</a>) and less likely to have good sanitation systems or access to water (see <a href="#livingConditions">“Poverty and Living Conditions”</a>). The divide in rural and urban literacy mirrors the divide between poor/not poor literacy: only 44% of rural adults, but 75% of urban adults, are able to read and write.</p>
             </div>
           </Col>
           <Col lg={12} md={12} sm={12} xs={12}>
@@ -201,6 +201,30 @@ class App extends Component {
             </div>
           </Col>
         </Grid>
+        <Grid className="mz-section">
+          <h2 id="livingCondition" className="mz-section-header">
+            Poverty & Living Conditions
+          </h2>
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <div className="mz-section-text">
+              <p>Certain living conditions can characterize poverty in Mozambique. We measured living conditions by house floor material and access to sanitation (determined by latrine type). Nearly 84% of poor people have either no sanitation facilities or only have an unimproved latrine. This is a distinctly poor phenomenon: 40% of poor people had absolutely no access to sanitation, while only 15% of people over the poverty line had no access to sanitation. Therefore, poor people are 2.5 times likely to have no access to sanitation facilities compared to the non-poor. Those without access to sanitation are highly prone to poverty: 73% of people with access to absolutely no sanitation facilities are poor, whereas only 41% of people who have at least some access to sanitation (unimproved latrine/improved latrine/septic tank etc.) are poor.</p>
+              <p>The disparity extends to floor type as well. Only 17% of poor households have floors made of high quality materials (concrete, cement, fiber, tile, etc.), compared to 62% of non-poor households. This makes non-poor households 3.6 times likelier than poor households to have a good floor. Households with a good floor only have an 18% chance of being in poverty.</p>
+              <p>Living conditions vary between rural and urban populations. A person from a rural household is nearly 4-times likelier to not have access to any form of sanitation than a person from an urban household. The lack of access to sanitation is made more acute by poverty: 49.9% of rural poor have no sanitation (compared to 34.3% rural non-poor) whereas 23.2% urban poor have no sanitation (compared to only 4.6% urban non-poor). In addition, rural individuals are less likely to live close to a clean water source, with 44% of rural individuals must walk over 30 minutes to access a water source compared to 26% of urban individuals.</p>
+            </div>
+          </Col>
+        </Grid>
+        <Grid className="mz-section">
+          <h2 id="inequality" className="mz-section-header">
+            Inequality in Mozambique
+          </h2>
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <div className="mz-section-text">
+              <p>Inequality in Mozambique is relatively high. The Gini coefficient is a measure of the income/wealth inequality of a distribution; values range from 0-1 with 1 corresponding to perfect inequality and 0 equating with perfect equality. Since we didn’t have income information we used consumption a proxy for income. Using this substitution, we found that the Gini coefficient for Mozambique is 0.46. This Gini value puts Mozambique in the most unequal 20% of countries in the world.</p>
+              <p>31% of households are responsible for 72% of total consumption (highest consumption quintile). In contrast 17% of households are responsible for 3% of consumption (lowest consumption quintile). On average a household in the highest quintile consumes over 22 times what a household in the lowest quintile consumes.</p>
+            </div>
+          </Col>
+        </Grid>
+        <footer></footer>
       </div>
     );
   }

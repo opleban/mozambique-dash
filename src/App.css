@@ -95,6 +95,7 @@ body {
 }
 
 h3.mz-socrata-chart-title {
+  color: #f1f1f1;
   font-size: 1.4em;
   margin: 0 0 0.5em 0;
 }
@@ -105,6 +106,10 @@ h3.mz-socrata-chart-title {
 
 .modal-container .modal, .modal-container .modal-backdrop {
   position: absolute;
+}
+
+.mz-socrata-chart-container {
+  margin-bottom: 2em;
 }
 
 .mz-socrata-chart-container .socrata-embed-container .input-group  {
@@ -157,11 +162,40 @@ h3.mz-socrata-chart-title {
   color: rgb(255, 0, 0);
 }
 
+.mz-poverty-description-wrapper h3, .mz-poverty-description-wrapper p {
+  color: #f1f1f1;
+}
+
+.mz-poverty-description-wrapper h3 {
+  margin-top: 0;
+}
+
+.mz-poverty-description-wrapper .mz-section-header {
+  margin-bottom: 0.4em
+}
+
 .mz-icon {
   color: #f1f1f1;
   font-size: 8em;
 }
 
 .mz-central-figure {
-  font-size: 1.4em;
+  font-size: 2em;
+}
+
+.mz-icon .fa {
+  cursor: pointer;
+}
+
+.mz-icon button {
+  background: none;
+  border: none;
+}
+
+.mz-tooltip {
+  font-size: 1em;
+}
+
+footer {
+  height: 1em;
 }
