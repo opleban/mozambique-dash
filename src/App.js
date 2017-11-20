@@ -29,11 +29,6 @@ class App extends Component {
           </div>
         </div>
         <Grid className="mz-section">
-          <Col lg={12} md={12} sm={12} xs={12}>
-            <iframe width="100%" height="520" frameborder="0" src="https://fladatakind.carto.com/viz/d2f6fea4-aa85-4e1a-9390-f2158487221c/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-          </Col>
-        </Grid>
-        <Grid className="mz-section">
           <h2 id="gender" className="mz-section-header">
             Poverty & Gender
           </h2>
