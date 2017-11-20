@@ -2,6 +2,14 @@ body {
   background-color: #DDD;
 }
 
+@media (max-width: 1300px) {
+  .mz-navbar .navbar-nav {
+    background-color: #222;
+    z-index: 1000;
+    position: relative;
+  }
+}
+
 .App {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
@@ -18,9 +26,8 @@ body {
 .App-header {
   background-color: #222;
   height: 75px;
-  padding: 20px;
+  padding: 15px;
   color: white;
-  position: fixed;
   z-index: 1000;
   width: 100%;
   max-width: 1300px;
@@ -92,6 +99,10 @@ body {
   font-size: 1.2em;
   line-height: 1.2em;
   color: #f1f1f1;
+}
+
+.mz-section-text a {
+  color: rgb(255, 0, 0);
 }
 
 h3.mz-socrata-chart-title {

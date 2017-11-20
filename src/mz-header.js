@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Nav, Navbar, MenuItem, NavDropdown } from 'react-bootstrap';
 
 export default () => {
   return (
@@ -12,14 +12,14 @@ export default () => {
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav>
-          <NavItem eventKey={1} href="/#executive">Executive Summary</NavItem>
-          <NavItem eventKey={2} href="/#description">Description</NavItem>
-          <NavItem eventKey={2} href="/#gender">Gender</NavItem>
-          <NavItem eventKey={2} href="/#household">Household Size</NavItem>
-          <NavItem eventKey={2} href="/#education">Education</NavItem>
-          <NavItem eventKey={2} href="/#technology">Technology</NavItem>
-          <NavItem eventKey={2} href="/#location">Rural & Urban</NavItem>
-          <NavItem eventKey={2} href="/#transportation">Transportation</NavItem>
+          <MenuItem eventKey={1} href="#executive">Executive Summary</MenuItem>
+          <MenuItem eventKey={2} href="#description">Description</MenuItem>
+          <MenuItem eventKey={3} href="#gender">Gender</MenuItem>
+          <MenuItem eventKey={4} href="#household">Household Size</MenuItem>
+          <MenuItem eventKey={5} href="#education">Education</MenuItem>
+          <MenuItem eventKey={6} href="#technology">Technology</MenuItem>
+          <MenuItem eventKey={7} href="#location">Rural & Urban</MenuItem>
+          <MenuItem eventKey={8} href="#transportation">Transportation</MenuItem>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
