@@ -47,7 +47,7 @@ export default () => {
          <Col lg={4} md={4} sm={4} xs={12}
               className="mz-icon">
           <OverlayTrigger placement="right" overlay={demographicTooltip} trigger={['hover', 'focus']}>
-            <button><i className="fa fa-child" aria-hidden="true"></i></button>
+            <button><i class="fa fa-users" aria-hidden="true"></i></button>
           </OverlayTrigger>
         </Col>
         <Col lg={4} md={4} sm={4} xs={12}
