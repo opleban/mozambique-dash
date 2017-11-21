@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { Col, Grid, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 export default () => {
-  const averageTooltip = (
-    <Tooltip id="avgTooltip" className="mz-tooltip">
-      The average poor person in Mozambique is 19.59 years old. In line with the general population, slightly more poor individuals are female than male (53.05% vs. 46.95%).
-    </Tooltip>
-  )
   const educationTooltip = (
     <Tooltip id="eduTooltip" className="mz-tooltip">
       Of poor adults, 70.87% have not completed primary education, with nearly 38% of poor adults never having attended school. Almost 77% of poor households are headed by someone who did not complete primary education. Less than half of poor adults are able to read and write.
@@ -37,6 +32,11 @@ export default () => {
       Only 17% of poor households have a floor made of high quality materials (concrete, cement, fiber, tile, etc.) with most poor households using clay (66%). Poor households have low quality sanitation: nearly 84% of poor people have either no sanitation facilities or only have an unimproved latrine.
     </Tooltip>
   );
+  const giniTooltip = (
+    <Tooltip id="giniTooltip" className="mz-tooltip">
+      On average a household in the highest quintile consumes over 22 times what a household in the lowest quintile consumes.
+    </Tooltip>
+  );
 
   return (
     <div className="mz-poverty-description-wrapper">
@@ -46,7 +46,7 @@ export default () => {
       <div className="mz-icon-canvas">
          <Col lg={4} md={4} sm={4} xs={12}
               className="mz-icon">
-          <OverlayTrigger placement="right" overlay={demographicTooltip} trigger={['hover', 'focus']}>
+          <OverlayTrigger placement="right" overlay={householdTooltip} trigger={['hover', 'focus']}>
             <button><i class="fa fa-users" aria-hidden="true"></i></button>
           </OverlayTrigger>
         </Col>
@@ -67,7 +67,7 @@ export default () => {
                 lgOffset={4} mdOffset={4} smOffset={4}
                 className="mz-icon">
             <div className="mz-central-figure">
-              <OverlayTrigger placement="bottom" overlay={averageTooltip}>
+              <OverlayTrigger placement="bottom" overlay={demographicTooltip}>
                 <button><i className="fa fa-female" aria-hidden="true"></i></button>
               </OverlayTrigger>
             </div>
@@ -79,15 +79,15 @@ export default () => {
             <button><i className="fa fa-wifi" aria-hidden="true"></i></button>
           </OverlayTrigger>
         </Col>
-         <Col lg={4} md={4} sm={4} xs={12}
+        <Col lg={4} md={4} sm={4} xs={12}
               className="mz-icon">
-          <OverlayTrigger placement="top" overlay={livingConditionsTooltip}>
-            <button><i className="fa fa-medkit" aria-hidden="true"></i></button>
+          <OverlayTrigger placement="right" overlay={giniTooltip}>
+            <button><i className="fa fa-balance-scale" aria-hidden="true"></i></button>
           </OverlayTrigger>
         </Col>
         <Col lg={4} md={4} sm={4} xs={12}
               className="mz-icon">
-          <OverlayTrigger placement="left" overlay={householdTooltip}>
+          <OverlayTrigger placement="left" overlay={livingConditionsTooltip}>
             <button><i className="fa fa-home" aria-hidden="true"></i></button>
           </OverlayTrigger>
         </Col>
