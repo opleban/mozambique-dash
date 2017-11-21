@@ -4,12 +4,12 @@ import { Col, Grid, OverlayTrigger, Tooltip } from 'react-bootstrap';
 export default () => {
   const educationTooltip = (
     <Tooltip id="eduTooltip" className="mz-tooltip">
-      Of poor adults, 70.87% have not completed primary education, with nearly 38% of poor adults never having attended school. Almost 77% of poor households are headed by someone who did not complete primary education. Less than half of poor adults are able to read and write.
+      Of poor adults, 70.87% have not completed a primary education, with nearly 38% of poor adults never having attended school. Almost 77% of poor households are headed by someone who did not complete a primary education. Less than half of poor adults are able to read and write.
     </Tooltip>
   );
   const demographicTooltip = (
     <Tooltip id="demoTooltip" className="mz-tooltip">
-      The average poor household has 5.77 members, with an average of 3.15 children under the age of 14. In line with the general population, most poor households (69.14%) are headed by men.
+      The average poor person in Mozambique is 19.59 years old. In line with the general population, slightly more poor individuals are female than male (53.05% vs. 46.95%).
     </Tooltip>
   );
   const locationTooltip = (
@@ -24,12 +24,12 @@ export default () => {
   );
   const technologyTooltip = (
     <Tooltip id="techTooltip" className="mz-tooltip">
-      More than 96% of poor people lived in households where no one has accessed the internet in the past year, and only 45% of poor households own a mobile phone.
+      More than 96% of poor people live in households where no one has accessed the internet in the past year, and only 45% of poor households own a mobile phone.
     </Tooltip>
   );
   const livingConditionsTooltip = (
     <Tooltip id="livCondTooltip" className="mz-tooltip">
-      Only 17% of poor households have a floor made of high quality materials (concrete, cement, fiber, tile, etc.) with most poor households using clay (66%). Poor households have low quality sanitation: nearly 84% of poor people have either no sanitation facilities or only have an unimproved latrine.
+      Only 17% of poor households have a floor made of high quality material with most poor households using clay (66%) for flooring. Less than a third of poor households have roofs made of high quality materials, with 72% using grass, stems, or non-lumber wood. Poor households have low quality sanitation: nearly 84% of poor people have either no sanitation facilities or only have an unimproved latrine.
     </Tooltip>
   );
   const giniTooltip = (

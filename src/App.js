@@ -30,6 +30,25 @@ class App extends Component {
           </div>
         </div>
         <Grid className="mz-section">
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <h2 id="executive">Overview of Poverty in Mozambique</h2>
+            <div className="mz-section-text">
+              <p>Poverty is a complex phenomenon. It is difficult to appropriately define, and adequately describe. Examining poverty in Mozambique is particularly interesting. Despite its “blistering pace of economic growth” from 2006 to 2011<sup className="mz-reference" title="Hanlon, Joseph (19 September 2007). Is Poverty Decreasing in Mozambique?. Open University, England">[1]</sup>, Mozambique remains one of the poorest countries the world.</p>
+              <p>Close to half of all individuals (49.6%) and households (44.2%) are poor as defined by the World Bank Poverty line. This poverty line is based on aggregate consumption, and has been adjusted for a) differences in prices faced by houses, and b) differences in household composition.</p>
+              <p>We examined the distinct characteristics of the poor to paint a holistic picture of poverty in Mozambique. Our analysis utilized survey data for 13,000 individuals in 2,526 households on over 150 variables. Certain characteristics were highly correlated with poverty, including:</p>
+              <ol className="mz-list">
+                <li>Living in a rural district</li>
+                <li>Lack of education</li>
+                <li>Poor sanitation</li>
+                <li>Lack of access to technology</li>
+              </ol>
+              <p>Additionally, certain characteristics that we expected to correlate with being poor were, in fact, statistically insignificant indicators of poverty, including: gender, proximity to medical care, proximity to a water source, joblessness, and home ownership.</p>
+              <p>We must caveat our findings by acknowledging that certain factors may have affected our data. As most Mozambicans are small-scale subsistence farmers, questions surrounding recent employment may be skewed due to the timing or framing of the survey questionnaire, masking seasonal or disguised unemployment. Some data was too extreme to be accurate; for example, 96% of individuals reported being blind. Finally, our binary differentiation between “poor” and “not-poor” is necessarily simplistic and may not accurately capture the depth of poverty. Such a metric ignores households that narrowly exceed the poverty line, yet experience the same living conditions and characteristics of those living below it.</p>
+              <p>This website examines poverty across specific parameters. For each parameter, we answer the questions “What are the differences between the poor and not-poor?” and “Who is most prone to poverty?” Our analysis concludes with a discussion of inequality in Mozambique.</p>
+            </div>
+          </Col>
+        </Grid>
+        <Grid className="mz-section">
           <MZPovertyDescription />
         </Grid>
         <Grid className="mz-section">
@@ -38,8 +57,8 @@ class App extends Component {
           </h2>
           <Col lg={6} md={8} sm={12} xs={12}>
             <div className="mz-section-text">
-              <p>Gender plays a less important role in Mozambique’s poverty than might be expected. There is no significant difference in the gender of household heads between poor and not poor families, nor do the poor have a different proportion of either gender than in the population.</p>
-              <p>People in households run by women are no more prone to poverty than those in households run by men. Nor are women in general more prone to poverty than men. However, there is a difference in education across gender – see <a href="#education">Poverty and Education</a> </p>
+              <p>Gender plays a less important role in Mozambique’s poverty than might be expected given global trends. The gender of the household head is not a predictor of that household’s poverty, nor is gender correlated with poverty at the individual level.</p>
+              <p>However, there is a difference in education across gender. Women heads of households are 2.5 times more likely to lack formal schooling, and this is amplified for the poor: only 39.7% of poor female household heads have some education, compared to 64.6% of non-poor female household heads. See <a href="#education">Poverty and Education</a> </p>
             </div>
           </Col>
           <Col lg={6} md={8} sm={12} xs={12}>
@@ -96,7 +115,7 @@ class App extends Component {
             <div className="mz-section-text">
               <br/>
               <p>Poor households are larger than non-poor households in Mozambique. The average poor household has 5.77 members, while households above the poverty line have 4.66 members on average. Poor households also have more children under the age of 14 than non-poor households, with averages of 3.15 children and 1.9 children, respectively.</p>
-              <p>Large households are more prone to poverty. Households with three or more children under the age of 14 are almost twice as likely to be poor than households with fewer than three children under the age of 14.</p>
+              <p>Households with many children are more prone to poverty. Households with three or more children (under age 14) are almost twice as likely to be poor than households with fewer than three children.</p>
             </div>
           </Col>
         </Grid>
@@ -106,10 +125,10 @@ class App extends Component {
           </h2>
             <Col lg={6} md={12} sm={12} xs={12}>
               <div className="mz-section-text">
-                <p>Lack of education and poverty are highly correlated in Mozambique. Poor households are more likely to have a household head with less education than non-poor households. Almost 77% of poor households are headed by someone who did not complete primary education, versus 50% of non-poor households. Poor adults experience much worse rates of literacy, with less than half of poor adults being able to read and write. Those adults not in poverty enjoy a 74% literacy rate. The correlation between education and poverty also extends to children: poor children are less likely to have attended school in the last year (44%) than non-poor children (55%).</p>
+                <p>Lack of education and poverty are highly correlated in Mozambique. Poor households are more likely to have a household head with less education than non-poor households. Almost 77% of poor households are headed by someone who did not complete primary education, versus 50% of non-poor households. Poor adults experience significantly worse literacy rates, with less than half of poor adults being able to read and write. Not-poor adults enjoy a 74% literacy rate. The correlation between education and poverty also extends to children: poor children are less likely to have attended school in the last year (44%) than non-poor children (55%).</p>
                 <p>People with university education are at the least risk of poverty (1.84%), followed by those with medium (4.6%) and basic (15%) technical education. Those with no education are at the highest risk of poverty (61.5%) followed by those who have only completed a lower primary (54.4%) and adult education (53.6%).</p>
-                <p>Education varies across gender. Over a third of adult women have never attended school; less than one sixth of adult men have never attended school. Women heads of households are 2.5 times more likely to lack formal schooling, and this is amplified for the poor: only 39.7% of poor, female household heads have some education, compared to 64.6% of non-poor female household heads.</p>
-                <p>Lack of formal education is concentrated in rural areas. The heads of urban households see a higher level of education, with only 19.2% having no education, compared to 35% of the heads of rural households. This, too, is amplified for the poor: rural and poor adults see the highest level of no schooling at 38.2%.</p>
+                <p>Education varies across gender. Over a third of adult women have never attended school versus less than one sixth of adult men who have never attended school. Women heads of households are 2.5 times more likely to lack formal schooling, and this is amplified for the poor: only 39.7% of poor, female household heads have some education, compared to 64.6% of non-poor female household heads.</p>
+                <p>Lack of formal education is concentrated in rural areas. The heads of urban households see a higher level of education, with only 19.2% having no education; comparatively, 35% of the heads of rural households have never attended school. This, too, is amplified for the poor: rural and poor adults see the highest level of no schooling at 38.2%.</p>
               </div>
             </Col>
             <Col lg={6} md={12} sm={12} xs={12}>
@@ -147,8 +166,8 @@ class App extends Component {
           </h2>
           <Col lg={6} md={8} sm={12} xs={12}>
             <div className="mz-section-text">
-              <p>The poor have less access to technology than the non-poor in Mozambique. More than 96% of poor people live in households where no one had accessed the internet within the past year, compared to 70% of non-poor people. Poor households are 1.75 times less likely to own a mobile phone compared to non-poor households.</p>
-              <p>Those without access to technology are more likely to be poor than those who do not. Households without access to internet are more than 5 times likelier to be poor than those with internet: 58% of individuals without internet access are poor, while only 10% with internet access are poor. Households that do not own at least one mobile phone had a 69% chance of being poor-- 25% higher than the overall population.</p>
+              <p>The poor have less access to technology than the non-poor in Mozambique. More than 96% of poor people live in households where no one had accessed the internet within the past year, compared to 70% of non-poor people. The disparity is less stark, but apparent, for mobile phone ownership. Poor households are 1.75 times less likely to own a mobile phone compared to non-poor households.</p>
+              <p>Those without access to technology are more likely to be poor than those who do. Households without internet are over 5 times more likely to be poor than those with internet: 58% of individuals without internet access are poor, while only 10% with internet access are poor. Households that do not own at least one mobile phone had a 69% chance of being poor -25% higher than the overall population.</p>
               <p>This could be due to regional concentration of the poor in more rural areas. A person from a rural household is almost 15-times less likely to have internet access compared to her urban peer (29.72% of urban residents belong to households that have accessed the internet in the past year, compared to 2.9% rural residents), and 1.5-times less likely to own a mobile phone (53.5% of rural residents have mobile phones, compared to 82.3% of urban residents).</p>
             </div>
           </Col>
@@ -173,7 +192,7 @@ class App extends Component {
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="mz-section-text">
               <p>Rural areas experience a greater problem with poverty than urban areas, with two out of three poor households living in rural regions of Mozambique. In contrast, nearly the same rate (63%) of non-poor households live in urban regions. Thus, a poor household is 1.34 times more likely to live in a rural region than a not poor household.</p>
-              <p>Rural populations are more prone to poverty than non-rural populations. Households located in rural regions are 1.78 times likelier to be poor than those in urban regions. Rural households are less likely to access technology (see <a href="#technology">Poverty and Technology</a>) and less likely to have good sanitation systems or access to water (see <a href="#livingConditions">Poverty and Living Conditions</a>). The divide in rural and urban literacy mirrors the divide between poor/not poor literacy: only 44% of rural adults, but 75% of urban adults, are able to read and write.</p>
+              <p>Rural populations are more prone to poverty than non-rural populations. Households located in rural regions are 1.78 times more likely to be poor than those in urban regions. Rural households are less likely to access technology (see <a href="#technology">Poverty and Technology</a>) and less likely to have good sanitation systems or access to water (see <a href="#livingConditions">Poverty and Living Conditions</a>). The divide in rural and urban literacy mirrors the divide between poor/not poor literacy: only 44% of rural adults, but 75% of urban adults, are able to read and write.</p>
             </div>
           </Col>
           <Col lg={12} md={12} sm={12} xs={12}>
@@ -186,8 +205,8 @@ class App extends Component {
           </h2>
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="mz-section-text">
-              <p>The poor have less access to transportation than the non-poor in Mozambique as defined as access to any sort of car, motorcycle, bicycle or being less than 60 minutes away from a bus stop. The poor make up over 73% of people without access to transportation. Moreover the chance that a poor person does not have access to transportation (37.8%) is almost three times that of a non-poor person (13.6%).</p>
-              <p>It takes over twice as much time for the average poor person (35 minutes) to reach a bus stop than the average non-poor person (80 minutes).</p>
+              <p>The poor are less able to access transportation than the non-poor in Mozambique. We defined transportation as access to any sort of car, motorcycle, or bicycle, or being less than 60 minutes away from a bus stop. Of those without access to transportation, 73% are poor. Moreover, poor individuals are nearly three times likelier to lack access to transportation than non-poor individuals (37.8% vs. 13.6% respectively). </p>
+              <p>These differences persist even when we look at ease of access, versus just lack of access, for poor individuals. It takes over twice as much time for the average poor person to reach a bus stop (80 minutes) than the average non-poor person (35 minutes).</p>
             </div>
           </Col>
           <Col lg={12} md={12} sm={12} xs={12}>
@@ -209,9 +228,9 @@ class App extends Component {
           </h2>
           <Col lg={6} md={6} sm={12} xs={12}>
             <div className="mz-section-text">
-              <p>Certain living conditions can characterize poverty in Mozambique. We measured living conditions by house floor material and access to sanitation (determined by latrine type). Nearly 84% of poor people have either no sanitation facilities or only have an unimproved latrine. This is a distinctly poor phenomenon: 40% of poor people had absolutely no access to sanitation, while only 15% of people over the poverty line had no access to sanitation. Therefore, poor people are 2.5 times likely to have no access to sanitation facilities compared to the non-poor. Those without access to sanitation are highly prone to poverty: 73% of people with access to absolutely no sanitation facilities are poor, whereas only 41% of people who have at least some access to sanitation (unimproved latrine/improved latrine/septic tank etc.) are poor.</p>
-              <p>The disparity extends to floor type as well. Only 17% of poor households have floors made of high quality materials (concrete, cement, fiber, tile, etc.), compared to 62% of non-poor households. This makes non-poor households 3.6 times likelier than poor households to have a good floor. Households with a good floor only have an 18% chance of being in poverty.</p>
-              <p>Living conditions vary between rural and urban populations. A person from a rural household is nearly 4-times likelier to not have access to any form of sanitation than a person from an urban household. The lack of access to sanitation is made more acute by poverty: 49.9% of rural poor have no sanitation (compared to 34.3% rural non-poor) whereas 23.2% urban poor have no sanitation (compared to only 4.6% urban non-poor). In addition, rural individuals are less likely to live close to a clean water source, with 44% of rural individuals must walk over 30 minutes to access a water source compared to 26% of urban individuals.</p>
+              <p>Certain living conditions can characterize poverty in Mozambique. We measured living conditions by access to sanitation (determined by latrine type), house floor material, and house roof material. Nearly 84% of poor people have either no sanitation facilities or only have an unimproved latrine. This is a distinctly poor phenomenon: 40% of poor people had absolutely no access to sanitation, while only 15% of people over the poverty line had no access to sanitation. Therefore, poor people are 2.5 times likely to have no access to sanitation facilities compared to the non-poor. Those without access to sanitation are highly prone to poverty: 73% of people with access to absolutely no sanitation facilities are poor, whereas only 41% of people who have at least some access to sanitation (unimproved latrine and better) are poor.</p>
+              <p>The disparity extends to house quality as well, as reflected by floor and roof type. Only 17% of poor households have floors made of high quality materials (cement, lumber, tile, etc.), compared to 62% of non-poor households. This makes non-poor households 3.6 times likelier than poor households to have a high-quality floor. Similarly, only 27% of poor households have roofs made of high quality materials (concrete, zinc, tile etc.), compared to 73% of non-poor households.</p>
+              <p>Living conditions vary between rural and urban populations. Rural households are nearly 4-times more likely to lack access to any form of sanitation than urban households. The lack of access to sanitation is made more acute by poverty: 49.9% of rural poor have no sanitation (compared to 34.3% rural non-poor) whereas 23.2% urban poor have no sanitation (compared to only 4.6% urban non-poor). Rural individuals are also less likely to live close to a clean water source, with 73% of rural individuals having to walk more than 30 minutes to access a water source, compared to 26% of urban individuals.</p>
             </div>
           </Col>
           <Col lg={6} md={6} sm={12} xs={12}>
@@ -236,8 +255,8 @@ class App extends Component {
           </h2>
           <Col lg={6} md={6} sm={12} xs={12}>
             <div className="mz-section-text">
-              <p>Inequality in Mozambique is relatively high. The Gini coefficient is a measure of the income/wealth inequality of a distribution; values range from 0-1 with 1 corresponding to perfect inequality and 0 equating with perfect equality. Since we didn’t have income information we used consumption a proxy for income. Using this substitution, we found that the Gini coefficient for Mozambique is 0.46. This Gini value puts Mozambique in the most unequal 20% of countries in the world.</p>
-              <p>31% of households are responsible for 72% of total consumption (highest consumption quintile). In contrast 17% of households are responsible for 3% of consumption (lowest consumption quintile). On average a household in the highest quintile consumes over 22 times what a household in the lowest quintile consumes.</p>
+              <p>Inequality in Mozambique is relatively high. The primary measure used to characterize inequality is the Gini coefficient. The Gini coefficient is a measure of the income/wealth inequality of a distribution; values range from 0-1 with 1 corresponding to perfect inequality and 0 equating with perfect equality. Since we did not have access to income information, we used total household consumption a proxy for income. Using this substitution, we found that the Gini coefficient for Mozambique is 0.46. This Gini value puts Mozambique in the most unequal 20% of countries in the world. This discovery is further supported by the finding that current consumption per quartile is significantly different from expected consumption per quartile, assuming perfect equality. </p>
+              <p>Notably, 31% of households in Mozambique are responsible for 72% of total consumption (the highest consumption quintile). In contrast 17% of households are responsible for 3% of consumption (the lowest consumption quintile). This means that on average, a household in the highest quintile consumes over 22 times what a household in the lowest quintile consumes.</p>
             </div>
           </Col>
           <Col lg={6} md={6} sm={12} xs={12}>

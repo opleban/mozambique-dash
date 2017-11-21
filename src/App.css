@@ -211,3 +211,11 @@ h3.mz-socrata-chart-title {
 footer {
   height: 1em;
 }
+
+.mz-reference {
+  cursor: pointer;
+}
+
+ol.mz-list li {
+  list-style: disc;
+}
