@@ -155,6 +155,8 @@ h3.mz-socrata-chart-title {
 .navbar-default.mz-navbar li a {
   color: #f1f1f1;
   box-shadow: none;
+  font-size: 1em;
+  padding: 15px 10px;
 }
 
 .navbar-default.mz-navbar li a:hover, .navbar-default.mz-navbar li a:focus {
@@ -163,7 +165,7 @@ h3.mz-socrata-chart-title {
 }
 
 .navbar-default.mz-navbar a.navbar-brand {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 400;
   font-family: 'Source Sans Pro', sans-serif;
   color: #f1f1f1;

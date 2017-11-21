@@ -45,6 +45,7 @@ class App extends Component {
               <p>Additionally, certain characteristics that we expected to correlate with being poor were, in fact, statistically insignificant indicators of poverty, including: gender, proximity to medical care, proximity to a water source, joblessness, and home ownership.</p>
               <p>We must caveat our findings by acknowledging that certain factors may have affected our data. As most Mozambicans are small-scale subsistence farmers, questions surrounding recent employment may be skewed due to the timing or framing of the survey questionnaire, masking seasonal or disguised unemployment. Some data was too extreme to be accurate; for example, 96% of individuals reported being blind. Finally, our binary differentiation between “poor” and “not-poor” is necessarily simplistic and may not accurately capture the depth of poverty. Such a metric ignores households that narrowly exceed the poverty line, yet experience the same living conditions and characteristics of those living below it.</p>
               <p>This website examines poverty across specific parameters. For each parameter, we answer the questions “What are the differences between the poor and not-poor?” and “Who is most prone to poverty?” Our analysis concludes with a discussion of inequality in Mozambique.</p>
+              <p>A copy of our technical appendix can be seen <a href="" target="_blank">here</a>.</p>
             </div>
           </Col>
         </Grid>
